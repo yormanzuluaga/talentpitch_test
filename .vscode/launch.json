@@ -1,0 +1,61 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "talentpitch dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--web-browser-flag",
+                "--disable-web-security",
+                ".env",
+            ]
+        },
+        {
+            "name": "talentpitch prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--web-browser-flag",
+                "--disable-web-security",
+                ".env",
+            ]
+        },
+        {
+            "name": "talentpitch prod profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": [
+                "--profile",
+                "--flavor",
+                "production",
+                "--web-browser-flag",
+                "--disable-web-security",
+                ".env",
+            ]
+        },
+        {
+            "name": "talentpitch dev profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "args": [
+                "--profile",
+                "--flavor",
+                "development",
+                "--dart-define",
+                "--dart-define",
+                "--web-browser-flag",
+                "--disable-web-security",
+                ".env",
+            ]
+        }
+    ]
+}
